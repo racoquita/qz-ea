@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes animatedBackground {
+  0% {
+    background-position: 96% 0%;
+  }
+
+  100% {
+    background-position: 65% 80%;
+  }
+}
+
+.photo:nth-child(1) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.photo:nth-child(1) div.img-1 {
+  -webkit-transform: scaleX(1) scaleY(1);
+}
+.photo:nth-child(1).move div.img-1 {
+  -webkit-transition: all 2s ease;
+  -webkit-transform: scaleX(0.6) scaleY(0.6) translateX(60px);
+  opacity: 1;
+}
+.photo:nth-child(1).fade {
+  -webkit-transition: opacity 5s ease;
+  opacity: 0;
+}
+
+.photo:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -2;
+}
+.photo:nth-child(2) div.img-2 {
+  -webkit-transform: scaleX(1) scaleY(1);
+}
+.photo:nth-child(2).move div.img-2 {
+  -webkit-transition: all 2s ease;
+  -webkit-transform: scaleX(0.6) scaleY(0.6) translateX(60px);
+  opacity: 1;
+}
+.photo:nth-child(2).fade {
+  -webkit-transition: opacity 5s ease;
+  opacity: 0;
+}
+
+.photo:nth-child(3) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -3;
+}
+.photo:nth-child(3) div.img-3 {
+  -webkit-transform: scaleX(1) scaleY(1);
+}
+.photo:nth-child(3).move div.img-3 {
+  -webkit-transition: all 2s ease;
+  -webkit-transform: scaleX(0.6) scaleY(0.6) translateX(60px);
+  opacity: 1;
+}
+.photo:nth-child(3).fade {
+  -webkit-transition: opacity 5s ease;
+  opacity: 0;
+}
+
+#qzad {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 720px;
+  max-width: 1100px;
+  height: 480px;
+}
+
+.img-container-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  min-width: 360px;
+  overflow: hidden;
+  z-index: -1;
+}
+.img-container-left div {
+  height: 100%;
+  width: 100%;
+}
+.img-container-left .img-1 {
+  background: url(../img/img1-left.jpg) -124px 0 no-repeat;
+  background-size: cover;
+}
+.img-container-left .img-2 {
+  background: url(../img/img2-left.jpg) 0 0 no-repeat;
+}
+
+.img-container-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  bottom: 0;
+  min-width: 360px;
+  z-index: -2;
+}
+.img-container-right div {
+  height: 100%;
+  width: 100%;
+}
+.img-container-right .img-2 {
+  background-position: 1% 52%;
+  background-size: 1000px;
+  opacity: 0;
+}
+
+.cta-container {
+  max-width: 287px;
+  width: 26%;
+  min-width: 286px;
+  margin: 0 auto;
+  height: 100%;
+}
+.cta-container img {
+  display: block;
+  margin: 0 auto;
+}
+.cta-container .logo {
+  width: 100%;
+  padding-top: 31px;
+}
+.cta-container .cta {
+  margin-top: 43px;
+}
+.cta-container .offer {
+  margin-top: 45px;
+}
