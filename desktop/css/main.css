@@ -13,11 +13,11 @@
   height: 100%;
 }
 .photo:nth-child(1) .img-1.fade {
-  -webkit-transition: opacity 3s ease;
+  -webkit-transition: opacity 2s ease;
   opacity: 0;
 }
 .photo:nth-child(1) .img-1.move {
-  -webkit-transition: all 5s ease;
+  -webkit-transition: all 3s ease;
 }
 
 .photo:nth-child(2) {
@@ -30,11 +30,11 @@
   height: 100%;
 }
 .photo:nth-child(2) .img-2.fade {
-  -webkit-transition: opacity 3s ease;
+  -webkit-transition: opacity 2s ease;
   opacity: 0;
 }
 .photo:nth-child(2) .img-2.move {
-  -webkit-transition: all 5s ease;
+  -webkit-transition: all 3s ease;
 }
 
 .photo:nth-child(3) {
@@ -47,11 +47,11 @@
   height: 100%;
 }
 .photo:nth-child(3) .img-3.fade {
-  -webkit-transition: opacity 3s ease;
+  -webkit-transition: opacity 2s ease;
   opacity: 0;
 }
 .photo:nth-child(3) .img-3.move {
-  -webkit-transition: all 5s ease;
+  -webkit-transition: all 3s ease;
 }
 
 #qzad {
@@ -134,4 +134,10 @@
 }
 .cta-container .offer {
   margin-top: 45px;
+  background: url("../img/offer.png") center center no-repeat;
+  height: 77px;
+}
+.cta-container .offer:hover {
+  height: 100px;
+  background: white url("../img/offer-rollover.png") center center no-repeat;
 }

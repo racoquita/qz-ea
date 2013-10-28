@@ -20,17 +20,13 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	.img-#{$count}{
 		
 		&.fade {
-	     -webkit-transition: opacity 3s ease;
+	     -webkit-transition: opacity 2s ease;
 	      opacity: 0;
 	    }
 	    &.move{	
-    	  	-webkit-transition: all 5s ease;
-    	 
+    	  	-webkit-transition: all 3s ease;
     	}
-
 	}
-    
-   
   }
   $count: $count + 1;
   $val: $val + $val;
@@ -117,8 +113,18 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	}
 	.cta{
 		margin-top: 43px;
+		.cta-link{
+
+		}
 	}
 	.offer{
 		margin-top: 45px;
+		background: url('../img/offer.png') center center no-repeat;
+		height: 77px;
+		&:hover{
+				height: 100px;
+				background: #fff url('../img/offer-rollover.png') center center no-repeat;
+		}
+		
 	}
 }
