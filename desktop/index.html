@@ -17,7 +17,6 @@
 			<div class="photo"><div class="img-1"><img src="img/img1-left.jpg" alt=""></div></div>
 			<div class="photo"><div class="img-2"><img src="img/img2-left.jpg" alt=""></div></div>
 			<div class="photo"><div class="img-3"><img src="img/img3-left.jpg" alt=""></div></div>
-
 		</div>
 		<div class="img-container-right">
 			<div class="photo">
@@ -53,12 +52,12 @@
 					setTimeout(function() {
 						$('.img-container-left .img-2').addClass('move');
 						setTimeout(function() {
-							$('.img-container-left .img-2').delay(100).addClass('fade');
+							$('.img-container-left .img-2').delay(1000).addClass('fade');
 							$('.img-container-right .img-2').addClass('fade');
 							setTimeout(function() {
-								//$('.img-container-left .img-2').addClass('fade');
+							
 								$('.img-container-right .img-3').addClass('move');
-							}, 3000);
+							}, 2000);
 						}, 2500);
 					}, 2500);
 				}, 2500);

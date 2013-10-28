@@ -1,6 +1,125 @@
 #qzad{
 	width:480px;
 	height:550px;
-	border: 1px solid black;
 	position:relative;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+$count: 1;
+$val: 50;
+$photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/img3-right.jpg');
+
+@each $photo in $photo-collection {
+  
+ .photo:nth-child(#{$count}){
+    position: absolute;
+   	right: 0;
+  	overflow: hidden;
+    top:0;
+    z-index: -#{$count};
+   	width: 100%;
+   	height: 100%;
+	.img-#{$count}{
+		
+		&.fade {
+	     -webkit-transition: opacity 2s ease;
+	      opacity: 0;
+	    }
+	    &.move{	
+    	  	-webkit-transition: all 3s ease;
+    	}
+	}
+  }
+  $count: $count + 1;
+  $val: $val + $val;
+}
+
+.img-container-left{
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:240px;
+	z-index:-1;
+	div{
+		height: 100%;
+		width: 100%;
+	}
+	.img-1{
+		-webkit-transform: scaleX(.8) scaleY(.8) translate(-55%, -18%);
+		&.move{
+
+		}
+	}
+	.img-2{
+		-webkit-transform: scaleX(1) scaleY(1) translate(-280px, -270px);
+		&.move{
+		
+			-webkit-transform: scaleX(.7) scaleY(.7) translate(-280px, -660px);
+		}
+	}
+	.img-3{
+		-webkit-transform: scaleX(.85) scaleY(.85) translate(-70%, -10%);
+		&.move{
+			
+		}
+	}
+}
+.img-container-right{
+	position:absolute;
+	top:0;
+	right:0;
+	width:50%;
+	bottom:0;
+	min-width:360px;
+	z-index:-2;
+	height:100%;
+	.img-1{
+		-webkit-transform: scaleX(1) scaleY(1) translate(-70%, -100px);
+		&.move{
+			-webkit-transform: scaleX(.7) scaleY(.7) translate(-40%, -170px);
+		}
+	}
+	.img-2{
+		-webkit-transform: scaleX(.95) scaleY(.95) translate(95px, -100px);
+
+	}
+	.img-3{
+		-webkit-transform: scaleX(.6) scaleY(.6) translate(-200%, -75%);
+		&.move{
+			-webkit-transform: scaleX(.5) scaleY(.5) translate(-150%, -75%);
+		}
+	}
+}
+.cta-container{
+	max-width: 287px;
+	width:286px;
+	margin:0 auto;
+	height:100%;
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+	.logo{
+		width:100%;
+		padding-top: 71px;
+	}
+	.cta{
+		margin-top: 75px;
+		.cta-link{
+
+		}
+	}
+	.offer{
+		margin-top: 62px;
+		background: url('../img/offer.png') center center no-repeat;
+		height: 100px;
+		&:hover{
+				height: 100px;
+				background: url('../img/offer-over.png') top center no-repeat;
+		}
+		
+	}
 }

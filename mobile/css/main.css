@@ -1,12 +1,7 @@
 #qzad {
-  width: 480px;
-  height: 550px;
+  width: 320px;
+  height: 150px;
   position: relative;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 .photo:nth-child(1) {
@@ -64,24 +59,21 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 240px;
+  width: 160px;
   z-index: -1;
 }
 .img-container-left div {
   height: 100%;
   width: 100%;
 }
-.img-container-left .img-1 {
-  -webkit-transform: scaleX(0.8) scaleY(0.8) translate(-55%, -18%);
-}
 .img-container-left .img-2 {
-  -webkit-transform: scaleX(1) scaleY(1) translate(-280px, -270px);
+  -webkit-transform: scaleX(1) scaleY(1);
 }
 .img-container-left .img-2.move {
-  -webkit-transform: scaleX(0.7) scaleY(0.7) translate(-280px, -660px);
+  -webkit-transform: scaleX(1) scaleY(1) translateY(-200px);
 }
 .img-container-left .img-3 {
-  -webkit-transform: scaleX(0.85) scaleY(0.85) translate(-70%, -10%);
+  -webkit-transform: scaleX(1) scaleY(1);
 }
 
 .img-container-right {
@@ -95,24 +87,23 @@
   height: 100%;
 }
 .img-container-right .img-1 {
-  -webkit-transform: scaleX(1) scaleY(1) translate(-70%, -100px);
+  -webkit-transform: scaleX(1.1) scaleY(1.1) translate(150px, 0);
 }
 .img-container-right .img-1.move {
-  -webkit-transform: scaleX(0.7) scaleY(0.7) translate(-40%, -170px);
+  -webkit-transform: scaleX(1) scaleY(1) translateX(200px);
 }
 .img-container-right .img-2 {
-  -webkit-transform: scaleX(0.95) scaleY(0.95) translate(95px, -100px);
+  -webkit-transform: scaleX(1) scaleY(1) translateX(200px);
 }
 .img-container-right .img-3 {
-  -webkit-transform: scaleX(0.6) scaleY(0.6) translate(-200%, -75%);
+  -webkit-transform: scaleX(1.2) scaleY(1.2) translate(100px, 0%);
 }
 .img-container-right .img-3.move {
-  -webkit-transform: scaleX(0.5) scaleY(0.5) translate(-150%, -75%);
+  -webkit-transform: scaleX(1) scaleY(1) translate(198px, 0%);
 }
 
 .cta-container {
-  max-width: 287px;
-  width: 286px;
+  width: 207px;
   margin: 0 auto;
   height: 100%;
 }
@@ -122,17 +113,19 @@
 }
 .cta-container .logo {
   width: 100%;
-  padding-top: 71px;
+  padding-top: 22px;
 }
 .cta-container .cta {
-  margin-top: 75px;
+  display: none;
 }
 .cta-container .offer {
-  margin-top: 62px;
+  display: none;
+  padding-top: 30px;
   background: url("../img/offer.png") center center no-repeat;
-  height: 100px;
+  height: 75px;
 }
-.cta-container .offer:hover {
-  height: 100px;
-  background: url("../img/offer-over.png") top center no-repeat;
+.cta-container .offer.over {
+  padding-top: 30px;
+  height: 75px;
+  background: url("../img/offer-over.png") center center no-repeat;
 }
