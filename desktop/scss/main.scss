@@ -2,17 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-@-webkit-keyframes animatedBackground {
-	0% { 
-		background-position: 96% 0%;
-		//opacity: 1;
-	}
-	100% {
-		background-position: 65% 80%; 
-		//opacity: 0;
-	
-	}
-}
+
 $count: 1;
 $val: 50;
 $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/img3-right.jpg');
@@ -21,28 +11,26 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
   
  .photo:nth-child(#{$count}){
     position: absolute;
-   	 right: 0;
-  	//overflow: hidden;
+   	right: 0;
+  	overflow: hidden;
     top:0;
     z-index: -#{$count};
-    	
-	div.img-#{$count}{
-			//background: url($photo) 0 0 no-repeat;  
-		-webkit-transform: scaleX(1) scaleY(1);
+   	width: 100%;
+   	height: 100%;
+	.img-#{$count}{
+		
+		&.fade {
+	     -webkit-transition: opacity 3s ease;
+	      opacity: 0;
+	    }
+	    &.move{	
+    	  	-webkit-transition: all 5s ease;
+    	 
+    	}
 
 	}
-    &.move{
-    	div.img-#{$count}{
-		
-    	  -webkit-transition: all 2s ease;
-    	  	-webkit-transform: scaleX(.6) scaleY(.6) translateX(60px);
-    	  	opacity: 1;
-    	}
-    }
-    &.fade {
-     -webkit-transition: opacity 5s ease;
-      opacity: 0;
-    }
+    
+   
   }
   $count: $count + 1;
   $val: $val + $val;
@@ -62,20 +50,30 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	bottom:0;
 	width:50%;
 	min-width:360px;
-	overflow:hidden;
 	z-index:-1;
 	div{
 		height: 100%;
 		width: 100%;
 	}
 	.img-1{
-		background: url(../img/img1-left.jpg) -124px 0 no-repeat;
-		background-size: cover;
+		-webkit-transform: scaleX(.8) scaleY(.8) translate(-55%, -18%);
+		&.move{
+
+		}
 	}
 	.img-2{
-		background: url(../img/img2-left.jpg) 0 0 no-repeat;
+		-webkit-transform: scaleX(1) scaleY(1) translate(-280px, -270px);
+		&.move{
+		
+			-webkit-transform: scaleX(.7) scaleY(.7) translate(-280px, -660px);
+		}
 	}
-	
+	.img-3{
+		-webkit-transform: scaleX(.75) scaleY(.75) translate(-20%, -20%);
+		&.move{
+			
+		}
+	}
 }
 .img-container-right{
 	position:absolute;
@@ -84,17 +82,23 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	width:50%;
 	bottom:0;
 	min-width:360px;
-	//overflow:hidden;
 	z-index:-2;
-	div{
-		height: 100%;
-		width: 100%;
+	height:100%;
+	.img-1{
+		-webkit-transform: scaleX(1) scaleY(1) translate(-70%, -100px);
+		&.move{
+			-webkit-transform: scaleX(.7) scaleY(.7) translate(-40%, -170px);
+		}
 	}
-	
 	.img-2{
-		background-position: 1% 52%;
-    	background-size:1000px;
-    	opacity: 0;
+		-webkit-transform: scaleX(1) scaleY(1) translate(-10px, -120px);
+
+	}
+	.img-3{
+		-webkit-transform: scaleX(.6) scaleY(.6) translate(-200%, -75%);
+		&.move{
+			-webkit-transform: scaleX(.5) scaleY(.5) translate(-150%, -75%);
+		}
 	}
 }
 .cta-container{

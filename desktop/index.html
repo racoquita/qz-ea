@@ -14,20 +14,20 @@
 	<div id="qzad">
 
 		<div class="img-container-left">
-			<div class="img-1"></div>
-			<div class="img-2"></div>
-			<div class="img-3"></div>
+			<div class="photo"><div class="img-1"><img src="img/img1-left.jpg" alt=""></div></div>
+			<div class="photo"><div class="img-2"><img src="img/img2-left.jpg" alt=""></div></div>
+			<div class="photo"><div class="img-3"><img src="img/img3-left.jpg" alt=""></div></div>
 
 		</div>
 		<div class="img-container-right">
 			<div class="photo">
-				<div class="img-1"></div>
+				<div class="img-1"><img src="img/img1-right.jpg" alt=""></div>
 			</div>
 			<div class="photo">
-				<div class="img-2"></div>
+				<div class="img-2"><img src="img/img2-right.jpg" alt=""></div>
 			</div>
 			<div class="photo">
-				<div class="img-3"></div>
+				<div class="img-3"><img src="img/img3-right.jpg" alt=""></div>
 			</div>
 			
 		</div>
@@ -44,13 +44,23 @@
 		$(document).ready(function(){
 			
 			setTimeout(function() {
-				$('.img-container-right .photo').addClass('move');
+				$('.img-container-right .img-1').addClass('move');
 				setTimeout(function() {
-					$('.img-container-right .img-2').addClass('fade');
-					//image 1 from left container fades 
-					$('.img-container-left .img-2').addClass('move');
-				}, 1000);
-			}, 1000);
+					$('.img-container-right .img-1').addClass('fade');
+					$('.img-container-left .img-1').addClass('fade');
+					setTimeout(function() {
+						$('.img-container-left .img-2').addClass('move');
+						setTimeout(function() {
+							$('.img-container-left .img-2').delay(100).addClass('fade');
+							$('.img-container-right .img-2').addClass('fade');
+							setTimeout(function() {
+								//$('.img-container-left .img-2').addClass('fade');
+								$('.img-container-right .img-3').addClass('move');
+							}, 3000);
+						}, 2500);
+					}, 2500);
+				}, 2500);
+			}, 2000);
 			
 
 		});
