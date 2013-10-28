@@ -51,23 +51,12 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 		height: 100%;
 		width: 100%;
 	}
-	.img-1{
-		-webkit-transform: scaleX(.8) scaleY(.8) translate(-55%, -18%);
-		&.move{
-
-		}
-	}
+	
 	.img-2{
 		-webkit-transform: scaleX(1) scaleY(1) translate(-280px, -270px);
 		&.move{
 		
 			-webkit-transform: scaleX(.7) scaleY(.7) translate(-280px, -660px);
-		}
-	}
-	.img-3{
-		-webkit-transform: scaleX(.75) scaleY(.75) translate(-20%, -20%);
-		&.move{
-			
 		}
 	}
 }
@@ -86,10 +75,7 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 			-webkit-transform: scaleX(.7) scaleY(.7) translate(-40%, -170px);
 		}
 	}
-	.img-2{
-		-webkit-transform: scaleX(1) scaleY(1) translate(-10px, -120px);
-
-	}
+	
 	.img-3{
 		-webkit-transform: scaleX(.6) scaleY(.6) translate(-200%, -75%);
 		&.move{
