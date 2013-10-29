@@ -3,7 +3,7 @@
 	padding: 0;
 }
 $count: 1;
-$photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/img3-right.jpg');
+$photo-collection: ('../img/img1-right.jpg') ('../img/img2-left.jpg') ('../img/img3-right.jpg');
 
 @each $photo in $photo-collection {
   
@@ -17,11 +17,17 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
     z-index: -#{$count};
 	.img-#{$count}{
 		&.fade {
-	     -webkit-transition: opacity 2s ease;
+	    -webkit-transition: opacity 2s ease-in-out;
+	       -moz-transition: opacity 2s ease-in-out;
+	       	 -o-transition: opacity 2s ease-in-out;
+	         	transition: opacity 2s ease-in-out;
 	      opacity: 0;
 	    }
 	    &.move{	
-    	  	-webkit-transition: all 5s linear;
+	    	-webkit-transition: all 3s ease-in-out;
+			   -moz-transition: all 3s ease-in-out;
+			   	 -o-transition: all 3s ease-in-out;
+			       	transition: all 3s ease-in-out;
     	}
 	}
   }
@@ -34,6 +40,14 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	min-width:720px;
 	max-width:1100px;
 	height:480px;
+	img{
+		border:0;
+	}
+	a{
+		text-decoration: none;
+		outline: 0;
+		border:0;
+	}
 }
 .img-container-left{
 	position:absolute;
@@ -47,10 +61,18 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 		height: 100%;
 	}
 	.img-2{
-		-webkit-transform: scaleX(0.5) scaleY(0.5) translate(-369px, -255px);
+		-webkit-transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
+		   -moz-transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
+		    -ms-transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
+		     -o-transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
+		        transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
 		&.move{
 		
-			-webkit-transform: scaleX(.7) scaleY(.7) translate(-280px, -615px);
+			 -webkit-transform: scaleX(.7) scaleY(.7) translate(-50%, -615px);
+				-moz-transform: scaleX(.7) scaleY(.7) translate(-50%, -615px);
+				 -ms-transform: scaleX(.7) scaleY(.7) translate(-50%, -615px);
+				  -o-transform: scaleX(.7) scaleY(.7) translate(-50%, -615px);
+				     transform: scaleX(.7) scaleY(.7) translate(-50%, -615px);
 		}
 	}
 }
@@ -63,18 +85,33 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	min-width:360px;
 	height:100%;
 	z-index:-2;
-
 	.img-1{
-		-webkit-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
+		 -webkit-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
+			-moz-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
+			 -ms-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
+			  -o-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
+			     transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
 		&.move{
-			-webkit-transform: scaleX(1) scaleY(1) translateX(-10%);
+		 -webkit-transform: scaleX(1) scaleY(1) translateX(-5%);
+			-moz-transform: scaleX(1) scaleY(1) translateX(-5%);
+			 -ms-transform: scaleX(1) scaleY(1) translateX(-5%);
+			  -o-transform: scaleX(1) scaleY(1) translateX(-5%);
+			     transform: scaleX(1) scaleY(1) translateX(-5%);
 		}
 	}
 	
 	.img-3{
-		-webkit-transform: scaleX(1.1) scaleY(1.1) translate(-30%, 0%);
+	 -webkit-transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
+		-moz-transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
+		 -ms-transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
+		  -o-transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
+		     transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
 		&.move{
-			-webkit-transform: scaleX(1.1) scaleY(1.1) translate(0%, 0%);
+		 -webkit-transform: scaleX(1.1) scaleY(1.1) translateX(0%);
+			-moz-transform: scaleX(1.1) scaleY(1.1) translateX(0%);
+			 -ms-transform: scaleX(1.1) scaleY(1.1) translateX(0%);
+			  -o-transform: scaleX(1.1) scaleY(1.1) translateX(0%);
+			     transform: scaleX(1.1) scaleY(1.1) translateX(0%);
 		}
 	}
 }
@@ -104,7 +141,7 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 		height: 100px;
 		&:hover{
 				height: 100px;
-				background: #fff url('../img/offer-rollover.png') center center no-repeat;
+				background: url('../img/offer-rollover.png') center center no-repeat;
 		}
 	}
 }
