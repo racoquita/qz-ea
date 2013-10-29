@@ -2,36 +2,31 @@
 	margin: 0;
 	padding: 0;
 }
-
 $count: 1;
-$val: 50;
 $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/img3-right.jpg');
 
 @each $photo in $photo-collection {
   
  .photo:nth-child(#{$count}){
     position: absolute;
-   	right: 0;
-  	overflow: hidden;
     top:0;
-    z-index: -#{$count};
+   	right: 0;
    	width: 100%;
    	height: 100%;
+  	overflow: hidden;
+    z-index: -#{$count};
 	.img-#{$count}{
-		
 		&.fade {
 	     -webkit-transition: opacity 2s ease;
 	      opacity: 0;
 	    }
 	    &.move{	
-    	  	-webkit-transition: all 3s ease;
+    	  	-webkit-transition: all 5s linear;
     	}
 	}
   }
   $count: $count + 1;
-  $val: $val + $val;
 }
-
 #qzad{
 	position:relative;
 	top:0;
@@ -47,16 +42,15 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	width:50%;
 	min-width:360px;
 	z-index:-1;
-	div{
-		height: 100%;
+	div{		
 		width: 100%;
+		height: 100%;
 	}
-	
 	.img-2{
-		-webkit-transform: scaleX(1) scaleY(1) translate(-280px, -270px);
+		-webkit-transform: scaleX(0.5) scaleY(0.5) translate(-369px, -255px);
 		&.move{
 		
-			-webkit-transform: scaleX(.7) scaleY(.7) translate(-280px, -660px);
+			-webkit-transform: scaleX(.7) scaleY(.7) translate(-280px, -615px);
 		}
 	}
 }
@@ -64,29 +58,30 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	position:absolute;
 	top:0;
 	right:0;
-	width:50%;
 	bottom:0;
+	width:50%;
 	min-width:360px;
-	z-index:-2;
 	height:100%;
+	z-index:-2;
+
 	.img-1{
-		-webkit-transform: scaleX(1) scaleY(1) translate(-70%, -100px);
+		-webkit-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
 		&.move{
-			-webkit-transform: scaleX(.7) scaleY(.7) translate(-40%, -170px);
+			-webkit-transform: scaleX(1) scaleY(1) translateX(-10%);
 		}
 	}
 	
 	.img-3{
-		-webkit-transform: scaleX(.6) scaleY(.6) translate(-200%, -75%);
+		-webkit-transform: scaleX(1.1) scaleY(1.1) translate(-30%, 0%);
 		&.move{
-			-webkit-transform: scaleX(.5) scaleY(.5) translate(-150%, -75%);
+			-webkit-transform: scaleX(1.1) scaleY(1.1) translate(0%, 0%);
 		}
 	}
 }
 .cta-container{
 	max-width: 287px;
-	width:26%;
 	min-width:286px;
+	width:26%;
 	margin:0 auto;
 	height:100%;
 	img{
@@ -96,21 +91,20 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	.logo{
 		width:100%;
 		padding-top: 31px;
+		&.drop{
+			padding-top:85px;
+		}
 	}
 	.cta{
 		margin-top: 43px;
-		.cta-link{
-
-		}
 	}
 	.offer{
 		margin-top: 45px;
 		background: url('../img/offer.png') center center no-repeat;
-		height: 77px;
+		height: 100px;
 		&:hover{
 				height: 100px;
 				background: #fff url('../img/offer-rollover.png') center center no-repeat;
 		}
-		
 	}
 }
