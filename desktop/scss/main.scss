@@ -18,10 +18,10 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 	.img-#{$count}{
 		&.fade {
 		opacity: 0;
-	    -webkit-transition: opacity 5s ease-in-out 2.5s;
-	       -moz-transition: opacity 5s ease-in-out;
-	       	 -o-transition: opacity 5s ease-in-out;
-	         	transition: opacity 5s ease-in-out;
+	    -webkit-transition: opacity 4s linear;
+	       -moz-transition: opacity 4s linear;
+	       	 -o-transition: opacity 4s linear;
+	         	transition: opacity 4s ease-in;
 	     	
 	    }
 	    &.move{	
@@ -70,7 +70,14 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 	}
 
 	.img-2{
-		
+		&.move {
+			&.fade{
+				-webkit-transition: opacity 2s ease 1s;
+				 -moz-transition: opacity 2s ease 1s;
+		        -o-transition: opacity 2s ease 1s;
+		       		transition: opacity 2s ease 1s;
+			}
+	    }
 		-webkit-transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
 		   -moz-transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
 		    -ms-transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
@@ -78,7 +85,7 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 		        transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
 		&.move{
 		
-			 -webkit-transform: scaleX(.7) scaleY(.7) translate(-50%, -615px);
+			 -webkit-transform: scaleX(.7) scaleY(.7) translate(-50%, -620px);
 				-moz-transform: scaleX(.7) scaleY(.7) translate(-50%, -615px);
 				 -ms-transform: scaleX(.7) scaleY(.7) translate(-50%, -615px);
 				  -o-transform: scaleX(.7) scaleY(.7) translate(-50%, -615px);
@@ -97,7 +104,7 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 	height:100%;
 	z-index:-2;
 	.img-1{
-		 -webkit-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
+		 -webkit-transform: scaleX(1.1) scaleY(1.1) translateX(-32%);
 			-moz-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
 			 -ms-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
 			  -o-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
@@ -112,11 +119,11 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 	}
 	
 	.img-3{
-	 -webkit-transform: scaleX(1) scaleY(1) translateX(-30%);
-		-moz-transform: scaleX(1) scaleY(1) translateX(-30%);
-		 -ms-transform: scaleX(1) scaleY(1) translateX(-30%);
-		  -o-transform: scaleX(1) scaleY(1) translateX(-30%);
-		     transform: scaleX(1) scaleY(1) translateX(-30%);
+	 -webkit-transform: scaleX(1) scaleY(1) translateX(-40%);
+		-moz-transform: scaleX(1) scaleY(1) translateX(-40%);
+		 -ms-transform: scaleX(1) scaleY(1) translateX(-40%);
+		  -o-transform: scaleX(1) scaleY(1) translateX(-40%);
+		     transform: scaleX(1) scaleY(1) translateX(-40%);
 		&.move{
 		 -webkit-transform: scaleX(1) scaleY(1) translateX(0%);
 			-moz-transform: scaleX(1) scaleY(1) translateX(0%);
@@ -143,8 +150,6 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 		&.drop{
 			padding-top:85px;
 		}
-
-
 	}
 	.cta{
 		margin-top: 43px;

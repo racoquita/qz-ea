@@ -12,7 +12,6 @@
 </head>
 <body>
 	<div id="qzad">
-
 		<div class="img-container-left">
 			<div class="photo"><div class="img-1"><img src="img/img1-left.jpg" alt=""></div></div>
 			<div class="photo"><div class="img-2"><img src="img/img2-left.jpg" alt=""></div></div> 
@@ -63,6 +62,11 @@
 			clearTimeout(ct);
 			imgLeft01.removeClass('fade').removeClass('move');
 			imgRight01.removeClass('fade').removeClass('move');
+
+			imgRight02.removeClass('fade');
+			imgLeft02.removeClass('fade');
+
+			imgRight03.removeClass('move');
 		};
 		function init () {
 			currentSet = 0;

@@ -14,10 +14,10 @@
 }
 .img-container-left .photo:nth-child(1) .img-1.fade, .img-container-right .photo:nth-child(1) .img-1.fade {
   opacity: 0;
-  -webkit-transition: opacity 5s ease-in-out 2.5s;
-  -moz-transition: opacity 5s ease-in-out;
-  -o-transition: opacity 5s ease-in-out;
-  transition: opacity 5s ease-in-out;
+  -webkit-transition: opacity 4s linear;
+  -moz-transition: opacity 4s linear;
+  -o-transition: opacity 4s linear;
+  transition: opacity 4s ease-in;
 }
 .img-container-left .photo:nth-child(1) .img-1.move, .img-container-right .photo:nth-child(1) .img-1.move {
   -webkit-transition: all 5s ease-in-out;
@@ -37,10 +37,10 @@
 }
 .img-container-left .photo:nth-child(2) .img-2.fade, .img-container-right .photo:nth-child(2) .img-2.fade {
   opacity: 0;
-  -webkit-transition: opacity 5s ease-in-out 2.5s;
-  -moz-transition: opacity 5s ease-in-out;
-  -o-transition: opacity 5s ease-in-out;
-  transition: opacity 5s ease-in-out;
+  -webkit-transition: opacity 4s linear;
+  -moz-transition: opacity 4s linear;
+  -o-transition: opacity 4s linear;
+  transition: opacity 4s ease-in;
 }
 .img-container-left .photo:nth-child(2) .img-2.move, .img-container-right .photo:nth-child(2) .img-2.move {
   -webkit-transition: all 5s ease-in-out;
@@ -60,10 +60,10 @@
 }
 .img-container-left .photo:nth-child(3) .img-3.fade, .img-container-right .photo:nth-child(3) .img-3.fade {
   opacity: 0;
-  -webkit-transition: opacity 5s ease-in-out 2.5s;
-  -moz-transition: opacity 5s ease-in-out;
-  -o-transition: opacity 5s ease-in-out;
-  transition: opacity 5s ease-in-out;
+  -webkit-transition: opacity 4s linear;
+  -moz-transition: opacity 4s linear;
+  -o-transition: opacity 4s linear;
+  transition: opacity 4s ease-in;
 }
 .img-container-left .photo:nth-child(3) .img-3.move, .img-container-right .photo:nth-child(3) .img-3.move {
   -webkit-transition: all 5s ease-in-out;
@@ -111,8 +111,14 @@
   -o-transform: scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
   transform: scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
 }
+.img-container-left .img-2.move.fade {
+  -webkit-transition: opacity 2s ease 1s;
+  -moz-transition: opacity 2s ease 1s;
+  -o-transition: opacity 2s ease 1s;
+  transition: opacity 2s ease 1s;
+}
 .img-container-left .img-2.move {
-  -webkit-transform: scaleX(0.7) scaleY(0.7) translate(-50%, -615px);
+  -webkit-transform: scaleX(0.7) scaleY(0.7) translate(-50%, -620px);
   -moz-transform: scaleX(0.7) scaleY(0.7) translate(-50%, -615px);
   -ms-transform: scaleX(0.7) scaleY(0.7) translate(-50%, -615px);
   -o-transform: scaleX(0.7) scaleY(0.7) translate(-50%, -615px);
@@ -130,7 +136,7 @@
   z-index: -2;
 }
 .img-container-right .img-1 {
-  -webkit-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
+  -webkit-transform: scaleX(1.1) scaleY(1.1) translateX(-32%);
   -moz-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
   -ms-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
   -o-transform: scaleX(1.2) scaleY(1.2) translateX(-30%);
@@ -144,11 +150,11 @@
   transform: scaleX(1) scaleY(1) translateX(-5%);
 }
 .img-container-right .img-3 {
-  -webkit-transform: scaleX(1) scaleY(1) translateX(-30%);
-  -moz-transform: scaleX(1) scaleY(1) translateX(-30%);
-  -ms-transform: scaleX(1) scaleY(1) translateX(-30%);
-  -o-transform: scaleX(1) scaleY(1) translateX(-30%);
-  transform: scaleX(1) scaleY(1) translateX(-30%);
+  -webkit-transform: scaleX(1) scaleY(1) translateX(-40%);
+  -moz-transform: scaleX(1) scaleY(1) translateX(-40%);
+  -ms-transform: scaleX(1) scaleY(1) translateX(-40%);
+  -o-transform: scaleX(1) scaleY(1) translateX(-40%);
+  transform: scaleX(1) scaleY(1) translateX(-40%);
 }
 .img-container-right .img-3.move {
   -webkit-transform: scaleX(1) scaleY(1) translateX(0%);
