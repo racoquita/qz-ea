@@ -25,19 +25,17 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-left.jpg') ('../img/i
 	.img-#{$count}{
 		
 		&.fade {
-	      -webkit-transition: opacity 2s ease;
-			 -moz-transition: opacity 2s ease;
-	 		  -ms-transition: opacity 2s ease;
-		  	   -o-transition: opacity 2s ease;
-		 		  transition: opacity 2s ease;
-	      opacity: 0;
+			opacity: 0;
+		    -webkit-transition: opacity 5s ease-in-out 2.5s;
+		       -moz-transition: opacity 5s ease-in-out;
+		       	 -o-transition: opacity 5s ease-in-out;
+		         	transition: opacity 5s ease-in-out;
 	    }
 	    &.move{	
-    	  -webkit-transition: all 3s ease;
-    	  	 -moz-transition: all 3s ease;
-	 		  -ms-transition: all 3s ease;
-		  	   -o-transition: all 3s ease;
-		 		  transition: all 3s ease;
+	    	-webkit-transition: all 5s ease-in-out;
+			   -moz-transition: all 5s ease-in-out;
+			   	 -o-transition: all 5s ease-in-out;
+			       	transition: all 5s ease-in-out;
     	}
 	}
   }

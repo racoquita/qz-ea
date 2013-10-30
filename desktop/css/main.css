@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.photo:nth-child(1) {
+.img-container-left .photo:nth-child(1), .img-container-right .photo:nth-child(1) {
   position: absolute;
   top: 0;
   right: 0;
@@ -12,21 +12,21 @@
   overflow: hidden;
   z-index: -1;
 }
-.photo:nth-child(1) .img-1.fade {
-  -webkit-transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
+.img-container-left .photo:nth-child(1) .img-1.fade, .img-container-right .photo:nth-child(1) .img-1.fade {
   opacity: 0;
+  -webkit-transition: opacity 5s ease-in-out 2.5s;
+  -moz-transition: opacity 5s ease-in-out;
+  -o-transition: opacity 5s ease-in-out;
+  transition: opacity 5s ease-in-out;
 }
-.photo:nth-child(1) .img-1.move {
-  -webkit-transition: all 3s ease-in-out;
-  -moz-transition: all 3s ease-in-out;
-  -o-transition: all 3s ease-in-out;
-  transition: all 3s ease-in-out;
+.img-container-left .photo:nth-child(1) .img-1.move, .img-container-right .photo:nth-child(1) .img-1.move {
+  -webkit-transition: all 5s ease-in-out;
+  -moz-transition: all 5s ease-in-out;
+  -o-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
 }
 
-.photo:nth-child(2) {
+.img-container-left .photo:nth-child(2), .img-container-right .photo:nth-child(2) {
   position: absolute;
   top: 0;
   right: 0;
@@ -35,21 +35,21 @@
   overflow: hidden;
   z-index: -2;
 }
-.photo:nth-child(2) .img-2.fade {
-  -webkit-transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
+.img-container-left .photo:nth-child(2) .img-2.fade, .img-container-right .photo:nth-child(2) .img-2.fade {
   opacity: 0;
+  -webkit-transition: opacity 5s ease-in-out 2.5s;
+  -moz-transition: opacity 5s ease-in-out;
+  -o-transition: opacity 5s ease-in-out;
+  transition: opacity 5s ease-in-out;
 }
-.photo:nth-child(2) .img-2.move {
-  -webkit-transition: all 3s ease-in-out;
-  -moz-transition: all 3s ease-in-out;
-  -o-transition: all 3s ease-in-out;
-  transition: all 3s ease-in-out;
+.img-container-left .photo:nth-child(2) .img-2.move, .img-container-right .photo:nth-child(2) .img-2.move {
+  -webkit-transition: all 5s ease-in-out;
+  -moz-transition: all 5s ease-in-out;
+  -o-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
 }
 
-.photo:nth-child(3) {
+.img-container-left .photo:nth-child(3), .img-container-right .photo:nth-child(3) {
   position: absolute;
   top: 0;
   right: 0;
@@ -58,18 +58,18 @@
   overflow: hidden;
   z-index: -3;
 }
-.photo:nth-child(3) .img-3.fade {
-  -webkit-transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
+.img-container-left .photo:nth-child(3) .img-3.fade, .img-container-right .photo:nth-child(3) .img-3.fade {
   opacity: 0;
+  -webkit-transition: opacity 5s ease-in-out 2.5s;
+  -moz-transition: opacity 5s ease-in-out;
+  -o-transition: opacity 5s ease-in-out;
+  transition: opacity 5s ease-in-out;
 }
-.photo:nth-child(3) .img-3.move {
-  -webkit-transition: all 3s ease-in-out;
-  -moz-transition: all 3s ease-in-out;
-  -o-transition: all 3s ease-in-out;
-  transition: all 3s ease-in-out;
+.img-container-left .photo:nth-child(3) .img-3.move, .img-container-right .photo:nth-child(3) .img-3.move {
+  -webkit-transition: all 5s ease-in-out;
+  -moz-transition: all 5s ease-in-out;
+  -o-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
 }
 
 #qzad {
@@ -100,6 +100,9 @@
 .img-container-left div {
   width: 100%;
   height: 100%;
+}
+.img-container-left .img-1 img {
+  width: 100%;
 }
 .img-container-left .img-2 {
   -webkit-transform: scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
@@ -141,18 +144,18 @@
   transform: scaleX(1) scaleY(1) translateX(-5%);
 }
 .img-container-right .img-3 {
-  -webkit-transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
-  -moz-transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
-  -ms-transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
-  -o-transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
-  transform: scaleX(1.1) scaleY(1.1) translateX(-30%);
+  -webkit-transform: scaleX(1) scaleY(1) translateX(-30%);
+  -moz-transform: scaleX(1) scaleY(1) translateX(-30%);
+  -ms-transform: scaleX(1) scaleY(1) translateX(-30%);
+  -o-transform: scaleX(1) scaleY(1) translateX(-30%);
+  transform: scaleX(1) scaleY(1) translateX(-30%);
 }
 .img-container-right .img-3.move {
-  -webkit-transform: scaleX(1.1) scaleY(1.1) translateX(0%);
-  -moz-transform: scaleX(1.1) scaleY(1.1) translateX(0%);
-  -ms-transform: scaleX(1.1) scaleY(1.1) translateX(0%);
-  -o-transform: scaleX(1.1) scaleY(1.1) translateX(0%);
-  transform: scaleX(1.1) scaleY(1.1) translateX(0%);
+  -webkit-transform: scaleX(1) scaleY(1) translateX(0%);
+  -moz-transform: scaleX(1) scaleY(1) translateX(0%);
+  -ms-transform: scaleX(1) scaleY(1) translateX(0%);
+  -o-transform: scaleX(1) scaleY(1) translateX(0%);
+  transform: scaleX(1) scaleY(1) translateX(0%);
 }
 
 .cta-container {
@@ -175,13 +178,20 @@
 }
 .cta-container .cta {
   margin-top: 43px;
+  width: 155px;
+  margin: 43px auto 0 auto;
 }
 .cta-container .offer {
   margin-top: 45px;
   background: url("../img/offer.png") center center no-repeat;
   height: 100px;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
 }
 .cta-container .offer:hover {
   height: 100px;
-  background: url("../img/offer-rollover.png") center center no-repeat;
+  background: url("../img/offer-rollover.png") center center no-repeat, url("../img/offer.png") center center no-repeat;
+  background-size: 100%, 100%;
 }
