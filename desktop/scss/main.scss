@@ -161,10 +161,7 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 		margin-top: 45px;
 		background: url('../img/offer.png') center center no-repeat;
 		height: 100px;
-	  	-webkit-transition: all .1s linear; 
-		 	 -moz-transition: all .1s linear; 
-		 	   -o-transition: all .1s linear; 
-		 		  transition: all .1s linear;
+
 		&:hover{
 				height: 100px;
 				background: url('../img/offer-rollover.png')  center center no-repeat, url('../img/offer.png') center center no-repeat;

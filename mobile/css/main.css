@@ -136,6 +136,9 @@
 .cta-container .cta {
   display: none;
 }
+.cta-container .cta a {
+  width: 109px;
+}
 .cta-container .offer {
   display: none;
   padding-top: 30px;

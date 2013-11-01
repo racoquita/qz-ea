@@ -101,7 +101,11 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-right.jpg') ('../img/
 	}
 	.cta{
 		display: none;
-		
+		a{
+			
+			width: 109px;
+		}
+	
 
 	}
 	.offer{

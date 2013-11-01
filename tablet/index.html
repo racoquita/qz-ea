@@ -39,7 +39,7 @@
 		var fadingTime;
 		var imageSets = [
 			function () {
-				imgRight01.addClass('move').addClass('fade');
+				imgRight01.addClass('fade');
 				imgLeft01.addClass('fade');		
 				setTimeout(function() {
 
@@ -71,6 +71,9 @@
 		function init () {
 			currentSet = 0;
 			changeFrame();
+			setTimeout(function() {
+				imgRight01.addClass('move');
+			}, 1000);
 		};
 		function changeFrame () {
 			
