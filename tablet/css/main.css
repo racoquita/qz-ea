@@ -20,10 +20,10 @@
 }
 .photo:nth-child(1) .img-1.fade {
   opacity: 0;
-  -webkit-transition: opacity 5s ease-in-out 2.5s;
-  -moz-transition: opacity 5s ease-in-out;
-  -o-transition: opacity 5s ease-in-out;
-  transition: opacity 5s ease-in-out;
+  -webkit-transition: opacity 4s linear;
+  -moz-transition: opacity 4s linear;
+  -o-transition: opacity 4s linear;
+  transition: opacity 4s linear;
 }
 .photo:nth-child(1) .img-1.move {
   -webkit-transition: all 5s ease-in-out;
@@ -43,10 +43,10 @@
 }
 .photo:nth-child(2) .img-2.fade {
   opacity: 0;
-  -webkit-transition: opacity 5s ease-in-out 2.5s;
-  -moz-transition: opacity 5s ease-in-out;
-  -o-transition: opacity 5s ease-in-out;
-  transition: opacity 5s ease-in-out;
+  -webkit-transition: opacity 4s linear;
+  -moz-transition: opacity 4s linear;
+  -o-transition: opacity 4s linear;
+  transition: opacity 4s linear;
 }
 .photo:nth-child(2) .img-2.move {
   -webkit-transition: all 5s ease-in-out;
@@ -66,10 +66,10 @@
 }
 .photo:nth-child(3) .img-3.fade {
   opacity: 0;
-  -webkit-transition: opacity 5s ease-in-out 2.5s;
-  -moz-transition: opacity 5s ease-in-out;
-  -o-transition: opacity 5s ease-in-out;
-  transition: opacity 5s ease-in-out;
+  -webkit-transition: opacity 4s linear;
+  -moz-transition: opacity 4s linear;
+  -o-transition: opacity 4s linear;
+  transition: opacity 4s linear;
 }
 .photo:nth-child(3) .img-3.move {
   -webkit-transition: all 5s ease-in-out;
@@ -114,7 +114,7 @@
   height: 100%;
 }
 .img-container-right .img-1 {
-  -webkit-transform: scaleX(1.1) scaleY(1.1) translateX(-150%);
+  -webkit-transform: scaleX(1.1) scaleY(1.1) translateX(-149%);
   -moz-transform: scaleX(1.1) scaleY(1.1) translateX(-150%);
   -ms-transform: scaleX(1.1) scaleY(1.1) translateX(-150%);
   -o-transform: scaleX(1.1) scaleY(1.1) translateX(-150%);
@@ -126,6 +126,10 @@
   -ms-transform: scaleX(1) scaleY(1) translateX(-90%);
   -o-transform: scaleX(1) scaleY(1) translateX(-90%);
   transform: scaleX(1) scaleY(1) translateX(-90%);
+}
+.img-container-right .img-2 {
+  position: inherit;
+  right: 0px;
 }
 .img-container-right .img-3 {
   -webkit-transform: scaleX(1) scaleY(1) translateX(-180%);

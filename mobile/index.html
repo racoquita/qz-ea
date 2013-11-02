@@ -2,6 +2,7 @@
 <html class="no-js">
 <head>
 	<title>Ernest Alexander Mobile </title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<style type="text/css">
 		* {
@@ -13,14 +14,17 @@
 <body>
 	<div id="qzad">
 		<div class="img-container-left">
-			<div class="photo"><div class="img-1"><img src="img/img1-left.jpg" alt=""></div></div>
-			<div class="photo"><div class="img-2"><img src="img/img2-left.jpg" alt=""></div></div>
 			<div class="photo"><div class="img-3"><img src="img/img3-left.jpg" alt=""></div></div>
+			<div class="photo"><div class="img-2"><img src="img/img2-left.jpg" alt=""></div></div>
+			<div class="photo"><div class="img-1"><img src="img/img1-left.jpg" alt=""></div></div>
+
 		</div>
 		<div class="img-container-right">
-			<div class="photo"><div class="img-1"><img src="img/img1-right.jpg" alt=""></div></div>
-			<div class="photo"><div class="img-2"><img src="img/img2-right.jpg" alt=""></div></div>
 			<div class="photo"><div class="img-3"><img src="img/img3-right.jpg" alt=""></div></div>
+			<div class="photo"><div class="img-2"><img src="img/img2-right.jpg" alt=""></div></div>
+			<div class="photo"><div class="img-1" ><img src="img/img1-right.jpg" alt="" ></div></div>
+
+
 		</div>
 		<div class="cta-container">
 			<div class="logo"><img src="img/logo.png" alt="Ernest Alexander New York"></div>
@@ -37,8 +41,8 @@
 		var fadingTime;
 		var imageSets = [
 			function () {
-				
-				imgRight01.addClass('move').addClass('fade');
+
+				imgRight01.addClass('fade');
 				imgLeft01.addClass('fade');
 		
 				setTimeout(function() {
@@ -49,7 +53,7 @@
 					}, 700);
 
 				}, 1500);
-			},
+			 },
 			function () {
 
 				imgRight02.addClass('fade');
@@ -80,7 +84,7 @@
 			changeFrame();
 			setTimeout(function() {
 				imgRight01.addClass('move');
-			}, 1000);
+			}, 700);
 		};
 		function changeFrame () {
 			if($.isFunction(imageSets[currentSet])) {

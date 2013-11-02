@@ -26,10 +26,10 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-left.jpg') ('../img/i
 		
 		&.fade {
 			opacity: 0;
-		    -webkit-transition: opacity 5s ease-in-out 2.5s;
-		       -moz-transition: opacity 5s ease-in-out;
-		       	 -o-transition: opacity 5s ease-in-out;
-		         	transition: opacity 5s ease-in-out;
+		    -webkit-transition: opacity 4s linear;
+		       -moz-transition: opacity 4s linear;
+		       	 -o-transition: opacity 4s linear;
+		         	transition: opacity 4s linear;
 	    }
 	    &.move{	
 	    	-webkit-transition: all 5s ease-in-out;
@@ -73,12 +73,13 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-left.jpg') ('../img/i
 	position:absolute;
 	top:0;
 	right:0;
+
 	width:240px;
 	bottom:0;
 	z-index:-2;
 	height:100%;
 	.img-1{
-		-webkit-transform: scaleX(1.1) scaleY(1.1) translateX(-150%);
+		-webkit-transform: scaleX(1.1) scaleY(1.1) translateX(-149%);
 		   -moz-transform: scaleX(1.1) scaleY(1.1) translateX(-150%);
 			-ms-transform: scaleX(1.1) scaleY(1.1) translateX(-150%);
 	 		 -o-transform: scaleX(1.1) scaleY(1.1) translateX(-150%);
@@ -90,6 +91,10 @@ $photo-collection: ('../img/img1-right.jpg') ('../img/img2-left.jpg') ('../img/i
 				 -o-transform: scaleX(1) scaleY(1) translateX(-90%);
 					transform: scaleX(1) scaleY(1) translateX(-90%);
 		}
+	}
+	.img-2{
+		position:inherit;
+		right: 0px;
 	}
 	.img-3{
 		-webkit-transform: scaleX(1) scaleY(1) translateX(-180%);
