@@ -125,11 +125,11 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 		  -o-transform: scaleX(1) scaleY(1) translateX(-40%);
 		     transform: scaleX(1) scaleY(1) translateX(-40%);
 		&.move{
-		 -webkit-transform: scaleX(1) scaleY(1) translateX(1%);
-			-moz-transform: scaleX(1) scaleY(1) translateX(1%);
-			 -ms-transform: scaleX(1) scaleY(1) translateX(1%);
-			  -o-transform: scaleX(1) scaleY(1) translateX(1%);
-			     transform: scaleX(1) scaleY(1) translateX(1%);
+		 -webkit-transform: scaleX(1) scaleY(1) translateX(-1%);
+			-moz-transform: scaleX(1) scaleY(1) translateX(-1%);
+			 -ms-transform: scaleX(1) scaleY(1) translateX(-1%);
+			  -o-transform: scaleX(1) scaleY(1) translateX(-1%);
+			     transform: scaleX(1) scaleY(1) translateX(-1%);
 		}
 	}
 }
