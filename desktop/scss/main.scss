@@ -78,10 +78,10 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 	.img-2{
 		&.move {
 			&.fade{
-				-webkit-transition: opacity 2s ease-in-out;
-				 -moz-transition: opacity 2s ease-in-out;
-		        -o-transition: opacity 2s ease-in-out;
-		       		transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease;
+				 -moz-transition: opacity 2s ease;
+		        -o-transition: opacity 2s ease;
+		       		transition: opacity 2s ease;
 			}
 	    }
 		-webkit-transform:scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
