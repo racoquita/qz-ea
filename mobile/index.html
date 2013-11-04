@@ -90,12 +90,10 @@
 		};
 		function changeFrame () {
 			if($.isFunction(imageSets[currentSet])) {
-				ct = setTimeout(function() {
-					
+				ct = setTimeout(function() {	
 					imageSets[currentSet]();
 					currentSet++;
 					changeFrame();
-					
 				 }, times[currentSet]);
 			};
 		};

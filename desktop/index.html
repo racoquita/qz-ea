@@ -3,7 +3,6 @@
 <head>
 	<title>Ernest alexander Desktop</title>
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
-
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<style type="text/css">
 		* {
@@ -40,16 +39,13 @@
 		var imgSet = [];
 		var fadingTime;
 		var imageSets = [
-			function () {
-				
+			function () {	
 				imgLeft01.addClass('fade');
-				
 				timeouts[1] = setTimeout(function() {
 				 	imgLeft02.addClass('move');
 				}, 1700);
 			},
 			 function () {
-			 	
 				timeouts[2] = setTimeout(function(){
 					imgLeft02.addClass('fade');
 				}, 2000);
@@ -59,7 +55,6 @@
 			 	timeouts[4] = setTimeout(function() {
 			 		imgRight03.addClass('move');
 			 	}, 2000);
-				
 			 }
 		];
 		function resetAd () {
@@ -79,7 +74,6 @@
 			currentSet = 0;
 			changeFrame();
 			imgRight01.addClass('move');
-			
 			timeouts[0] = setTimeout(function() {
 				imgRight01.addClass('fade');
 			}, 2000);
@@ -92,7 +86,6 @@
 					imageSets[currentSet]();
 					currentSet++;
 					changeFrame();
-					
 				 }, times[currentSet]);
 			}
 		};
