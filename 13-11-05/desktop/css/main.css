@@ -89,8 +89,6 @@
   .img-container-left div {
     width: 100%;
     height: 100%; }
-  .img-container-left .img-1 img, .img-container-left .img-3 img {
-    width: 100%; }
   .img-container-left .img-2 {
     -webkit-transform: scaleX(0.5) scaleY(0.5) translate(-70%, -255px);
     -moz-transform: scaleX(0.5) scaleY(0.5) translate(-70%, -255px);

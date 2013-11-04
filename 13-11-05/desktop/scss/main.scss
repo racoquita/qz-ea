@@ -69,12 +69,6 @@ $photo-collection: ('img-1') ('img-2') ('img-3');
 		height: 100%;
 	}
 
-	.img-1, .img-3{
-		img{
-			width: 100%;
-		}
-	}
-
 	.img-2{
 		&.move {
 			&.fade{
