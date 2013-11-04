@@ -36,6 +36,7 @@
 	<script type="text/javascript">
 		var imgLeft01, imgLeft02, imgLeft03, imgRight01, imgRight02, imgRight03, logo, cta, offer;
 		var times = [3000, 5000];
+		var timeouts = [];
 		var currentSet = 0;
 		var ct;
 		var fadingTime;
@@ -45,13 +46,12 @@
 				imgRight01.addClass('fade');
 				imgLeft01.addClass('fade');
 		
-				setTimeout(function() {
+				timeouts[1] = setTimeout(function() {
 					imgLeft02.addClass('move');
 					logo.fadeOut(750);
-					setTimeout(function() {
+					timeouts[2] = setTimeout(function() {
 						$('.offer, .cta').fadeIn(750);
 					}, 700);
-
 				}, 1500);
 			 },
 			function () {
@@ -59,7 +59,7 @@
 				imgRight02.addClass('fade');
 				imgLeft02.addClass('fade');
 
-				setTimeout(function() {
+				timeouts[3] = setTimeout(function() {
 					imgRight03.addClass('move');
 				}, 1000);
 			},
@@ -68,21 +68,23 @@
 			}
 		];
 		function resetAd () {
-			currentSet = 0;
-			changeFrame();
 			clearTimeout(ct);
+			$.each(timeouts, function(i, to){
+				clearTimeout(to);
+			});
 			imgLeft01.removeClass('fade').removeClass('move');
 			imgRight01.removeClass('fade').removeClass('move');
-
 			imgRight02.removeClass('fade');
 			imgLeft02.removeClass('fade');
-
 			imgRight03.removeClass('move');
+			$('.offer, .cta').hide();
+			logo.show();
+			offer.removeClass('over');
 		};
 		function init () {
 			currentSet = 0;
 			changeFrame();
-			setTimeout(function() {
+			timeouts[0] = setTimeout(function() {
 				imgRight01.addClass('move');
 			}, 700);
 		};

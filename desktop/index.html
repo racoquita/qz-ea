@@ -34,6 +34,7 @@
 	<script type="text/javascript">
 		var imgLeft01, imgLeft02, imgLeft03, imgRight01, imgRight02, imgRight03;
 		var times = [4000, 4000];
+		var timeouts = [];
 		var currentSet = 0;
 		var ct;
 		var imgSet = [];
@@ -43,40 +44,43 @@
 				
 				imgLeft01.addClass('fade');
 				
-				setTimeout(function() {
+				timeouts[1] = setTimeout(function() {
 				 	imgLeft02.addClass('move');
 				}, 1700);
 			},
 			 function () {
 			 	
-				setTimeout(function(){
+				timeouts[2] = setTimeout(function(){
 					imgLeft02.addClass('fade');
 				}, 2000);
-				setTimeout(function() {
+				timeouts[3] = setTimeout(function() {
 					imgRight02.addClass('fade');
 				}, 1000);
-			 	setTimeout(function() {
+			 	timeouts[4] = setTimeout(function() {
 			 		imgRight03.addClass('move');
 			 	}, 2000);
 				
 			 }
 		];
 		function resetAd () {
-			currentSet = 0;
-			changeFrame();
 			clearTimeout(ct);
-			imgLeft01.removeClass('fade').removeClass('move');
-			imgRight01.removeClass('fade').removeClass('move');
+			$.each(timeouts, function(i, to){
+				clearTimeout(to);
+			});
+			imgLeft01.removeClass('fade');
+			imgLeft01.removeClass('move');
+			imgRight01.removeClass('fade');
+			imgRight01.removeClass('move');
 			imgRight02.removeClass('fade');
 			imgLeft02.removeClass('fade');
 			imgRight03.removeClass('move');
-			init();
 		};
 		function init () {
 			currentSet = 0;
 			changeFrame();
 			imgRight01.addClass('move');
-			setTimeout(function() {
+			
+			timeouts[0] = setTimeout(function() {
 				imgRight01.addClass('fade');
 			}, 2000);
 		};
@@ -91,7 +95,7 @@
 					
 				 }, times[currentSet]);
 			}
-		}
+		};
 		$(document).ready(function(){
 			imgLeft01 = $('.img-container-left .img-1');
 			imgRight01 = $('.img-container-right .img-1');
